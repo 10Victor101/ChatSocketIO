@@ -2,6 +2,7 @@ const socket = io();
 
 window.addEventListener('load', () => {
     const currentName = getCurrentName();
+    title.innerHTML = `Bem vindo, ${currentName}!`;
     currentName === "" || currentName == null  ? window.location.href = `login.html` : loadContent(currentName);
 })
 
@@ -29,11 +30,8 @@ const sendMessage = (name, message) => {
 const loadContent = (name) =>{
     socket.emit("name",{name},(response) => {
         response.forEach(data => { 
-            contentChat.innerHTML += 
-                    `
-                    <div>${data.name}: ${data.message}</div>
-                    `
-                });
+            insertIntoChat(data.name,data.message);
+        });
     scrollToEnd("contentChat");
 })};
 
@@ -42,12 +40,14 @@ const scrollToEnd = (elementId) => {
     document.getElementById(elementId).scrollTop = document.getElementById(elementId).scrollHeight;
 }
 
+const insertIntoChat = (name,message) => {
+    name === getCurrentName() ? 
+    contentChat.innerHTML += `<li class = "user-message">${message}</li>` :
+    contentChat.innerHTML += `<li style = "padding: 0px"><b>${name}:</b> ${message}</li>`
+}
+
 /*Listening if message arrived*/
 socket.on("message", data =>{
-    const contentChat = document.getElementById("contentChat");
-    contentChat.innerHTML += 
-    `
-    <div>${data.name}: ${data.message}</div>
-    `
+    insertIntoChat(data.name,data.message);
     scrollToEnd("contentChat");
 })
