@@ -34,7 +34,13 @@ const loadContent = (name) =>{
                     <div>${data.name}: ${data.message}</div>
                     `
                 });
+    scrollToEnd("contentChat");
 })};
+
+
+const scrollToEnd = (elementId) => {
+    document.getElementById(elementId).scrollTop = document.getElementById(elementId).scrollHeight;
+}
 
 /*Listening if message arrived*/
 socket.on("message", data =>{
@@ -43,5 +49,5 @@ socket.on("message", data =>{
     `
     <div>${data.name}: ${data.message}</div>
     `
+    scrollToEnd("contentChat");
 })
-
