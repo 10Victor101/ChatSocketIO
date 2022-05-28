@@ -1,0 +1,126 @@
+/*LOGIN*/
+
+.body-card {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(41, 82, 144, 1) 35%,
+      #00d4ff 100%
+    );
+  }
+  
+  .card {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  
+  .inside-card-chat {
+    width: 900px;
+    height: 600px;
+    padding: 0px 30px 5px 30px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  }
+
+    
+  .inside-card-login {
+    width: 350px;
+    height: 250px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  }
+  
+  
+  .title-card {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 37px;
+  }
+  
+  .input-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .card input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .div-send-message-input{
+    width: 960px;
+    background: lightgray;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+.div-send-message-input input {
+  border: none;
+  width: 100%;
+}
+  
+/*INPUT*/
+
+.button-default {
+    background-color: #295290;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+  }
+  
+
+
+/*BARRA DE ROLAGEM */
+
+/* Largura */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo */
+::-webkit-scrollbar-track-piece {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #295290;
+    border-radius: 10px;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #717171
+}
