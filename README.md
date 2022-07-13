@@ -12,5 +12,5 @@
 <h3>Como rodar</h3>
 
 <p>
-    É necessario utilizar o comando no terminal <b>node server.js</b> para abrir o servidor na porta (por padrão está a 3000). Após isso só abrir a tela inicial <b>http://localhost:3000/login.html</b>
+    É necessario utilizar o comando no terminal <b>node server.js</b> para abrir o servidor (por padrão está na porta 3000). Após isso só abrir a tela inicial <b>http://localhost:3000/login.html</b>
 </p
