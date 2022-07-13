@@ -9,3 +9,8 @@
     WebSocket é um protocolo de comunicação bidirecional em tempo real com permanência ativa da conexão entre o cliente e o servidor, até que seja encerrada pelo servidor ou cliente. Sendo assim, o cliente ou o servidor podem enviar requisições a qualquer hora após a conexão ser estabelecida.
 </p>
 
+<h3>Como rodar</h3>
+
+<p>
+    É necessario utilizar o comando no terminal <b>node server.js</b> para abrir o servidor na porta (por padrão está a 3000). Após isso só abrir a tela inicial <b>http://localhost:3000/login.html</b>
+</p
