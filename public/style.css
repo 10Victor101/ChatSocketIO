@@ -9,7 +9,7 @@
       #00d4ff 100%
     );
   }
-  
+
   .card {
     width: 100%;
     min-height: 100vh;
@@ -20,11 +20,11 @@
     flex-direction: column;
     font-size: 20px;
   }
-  
+
   .inside-card-chat {
-    width: 900px;
+    width: 80%;
     height: 600px;
-    padding: 0px 30px 5px 30px;
+    /*padding: 0px 30px 5px 30px;*/
     background-color: white;
     border-radius: 10px 10px 0px 0px;
     display: flex;
@@ -32,9 +32,9 @@
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
   }
 
-    
+
   .inside-card-login {
-    width: 350px;
+    width: 70%;
     height: 250px;
     padding: 30px;
     background-color: white;
@@ -43,8 +43,8 @@
     flex-direction: column;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
   }
-  
-  
+
+
   .title-card {
     display: block;
     font-size: 30px;
@@ -54,13 +54,13 @@
     font-weight: bold;
     margin-bottom: 37px;
   }
-  
+
   .input-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
   }
-  
+
   .card input {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -73,7 +73,7 @@
   }
 
   .div-send-message-input{
-    width: 960px;
+    width: 80%;
     background: lightgray;
     border-radius: 0px 0px 10px 10px;
   }
@@ -82,11 +82,11 @@
   border: none;
   width: 100%;
 }
-  
+
 li, ol {
   list-style-type: none;
   margin: 5px;
-  word-break: break-all;  
+  word-break: break-all;
   padding: 5px;
 }
 
@@ -110,7 +110,7 @@ li, ol {
     height: 30px;
     width: 100%;
   }
-  
+
 
 
 /*BARRA DE ROLAGEM */
